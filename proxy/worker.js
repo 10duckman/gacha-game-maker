@@ -4,8 +4,8 @@
 const ALLOW_ORIGIN = 'https://jjhk0803.github.io';
 const ALLOW_HOSTS = [
   'api.anthropic.com', 'generativelanguage.googleapis.com', 'aiplatform.googleapis.com', 'oauth2.googleapis.com',
-  'api.openai.com', 'openrouter.ai', 'ollama.com', 'api.deepseek.com', 'image.novelai.net', 'api.fish.audio', 'api.elevenlabs.io',
-  'raw.githubusercontent.com', 'api.github.com',
+  'api.openai.com', 'openrouter.ai', 'ollama.com', 'api.deepseek.com', 'api.llmgateway.io', 'image.novelai.net', 'api.fish.audio', 'api.elevenlabs.io',
+  'raw.githubusercontent.com', 'api.github.com', 'github.com', 'api.githubcopilot.com', 'api.individual.githubcopilot.com',
 ];
 function cors(req) {
   return {

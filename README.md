@@ -23,6 +23,7 @@
 1. [Cloudflare](https://dash.cloudflare.com/sign-up)에 가입 → Workers & Pages → **Create** → **Create Worker** → 이름을 정하고 Deploy.
 2. **Edit code**를 눌러 기존 코드를 지우고, 이 저장소의 [`proxy/worker.js`](proxy/worker.js) 내용을 붙여 넣은 뒤 **Deploy**.
 3. 생긴 주소(`https://이름.계정.workers.dev`)를 앱의 설정 → 아이폰·웹 연결 → 중계 서버에 넣고 '연결 확인'.
+- **Vercel로 만들기**: [`proxy/vercel`](proxy/vercel) 폴더를 내 GitHub 저장소에 올리고 [Vercel](https://vercel.com)에서 Add New → Project로 그 저장소를 골라 Deploy해요(폴더 안에 넣었다면 Root Directory 지정). 생긴 주소(`https://이름.vercel.app`)를 중계 서버에 넣어요. 자세한 건 폴더 안 README.txt를 보세요.
 - 중계 서버는 내 계정에서 돌아가고, 지정한 AI 서비스 주소로만 요청을 넘겨요. API 키가 이 서버를 지나가니 남이 만든 서버 주소는 넣지 마세요.
 - ComfyUI는 웹 버전에서 https 주소만 연결돼요(Cloudflare Tunnel 등으로 열고 `--enable-cors-header` 옵션).
 
